@@ -1,0 +1,41 @@
+###
+//API-1 Get all Movies
+GET http://localhost:3000/movies/
+
+###
+//API-2 Post a Movie
+POST http://localhost:3000/movies/
+Content-Type: application/json
+
+{
+    "directorId": 55,
+    "movieName": "RRR",
+    "leadActor": "Nandamuri Taraka Rama Rao"
+}
+
+###
+//API-3 Get a movie
+GET http://localhost:3000/movies/117/
+
+###
+//API-4 Update Movie Details
+PUT http://localhost:3000/movies/117/
+Content-Type: application/json
+
+{
+    "directorId": 54,
+    "movieName": "RRR",
+    "leadActor": "Jr.NTR"
+}
+
+###
+//API-5 Delete a Movie
+DELETE http://localhost:3000/movies/117/
+
+###
+//API-6 Get all directors
+GET http://localhost:3000/directors/
+
+###
+//API-7 Get Director Movies
+GET http://localhost:3000/directors/54/movies/
